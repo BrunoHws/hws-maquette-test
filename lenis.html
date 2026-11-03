@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Maquette fictive Test 2 (Lenis)</title>
+<script src="https://api-dms-preprod.henritrip.fr/remarques.js" data-projet="pr-8403a826d72c4ca0e5c085f3f362f262" defer></script>
+<style>
+  body { font-family: system-ui, sans-serif; margin: 0; color: #1d2330; }
+  header { padding: 48px 24px; background: #eef2f8; }
+  h1 { font-size: 22px; margin: 0; }
+  section { padding: 32px 24px; border-bottom: 1px solid #e3e7ee; }
+  .bloc { height: 420px; background: #f7f8fb; border-radius: 12px; display: grid; place-items: center; }
+  details { margin: 8px 0; padding: 12px; background: #f7f8fb; border-radius: 8px; }
+  footer { padding: 32px 24px; }
+</style>
+<script src="https://cdn.jsdelivr.net/npm/lenis@1.1.13/dist/lenis.min.js"></script>
+<script>window.addEventListener("load",()=>{const l=new Lenis();window.__lenis=l;function f(t){l.raf(t);requestAnimationFrame(f)}requestAnimationFrame(f)});</script>
+</head>
+<body>
+<header>
+  <h1>Maquette fictive Test 2</h1>
+  <p id="accroche">Page de recette des Remarques. Aucun contenu client.</p>
+</header>
+<section>
+  <h2>Section 1</h2>
+  <div class="bloc"><p id="bloc-1">Bloc de contenu 1</p></div>
+</section>
+<section>
+  <h2>Section 2</h2>
+  <div class="bloc"><p id="bloc-2">Bloc de contenu 2</p></div>
+</section>
+<section>
+  <h2>Section 3</h2>
+  <div class="bloc"><p id="bloc-3">Bloc de contenu 3, loin en bas</p></div>
+</section>
+<section id="faq">
+  <h2>Questions fréquentes</h2>
+  <details><summary>Question A</summary><p id="faq-a">Réponse cachée A</p></details>
+  <details><summary>Question B</summary><p id="faq-b">Réponse cachée B</p></details>
+</section>
+<footer><p id="pied">Pied de page fictif</p></footer>
+</body>
+</html>
